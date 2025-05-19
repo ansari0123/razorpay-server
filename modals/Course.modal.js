@@ -19,4 +19,4 @@ const CourseSchema = mongoose.Schema({
   },
 });
 
-export default mongoose.connect("course", CourseSchema);
+export default mongoose.model("course", CourseSchema);

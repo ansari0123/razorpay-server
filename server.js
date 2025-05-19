@@ -6,7 +6,7 @@ import courseRouter from "./routes/Course.routes.js";
 dotenv.config();
 const app = express();
 
-console.log(process.env.MONGO_DB_URL);
+app.use(express.json());
 
 app.use("/api/course", courseRouter);
 
